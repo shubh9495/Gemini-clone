@@ -36,6 +36,7 @@
 .Sidebar .recent{
     display: flex;
     flex-direction: column;
+    animation: fadeIn 1.5s;
 
 }
 
@@ -69,4 +70,10 @@
 .Sidebar .bottom_icon{
     padding-right: 10px;
     cursor: pointer;
+}
+
+@media (max-width:600px){
+    .Sidebar{
+        display: none;
+    }
 }

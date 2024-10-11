@@ -33,11 +33,12 @@
 
 }
 
-.main .greet span{
-    background: -webkit-linear-gradient(16deg ,#4b90ff,#ff5546);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+.main .greet span {
+    background: linear-gradient(16deg, #4b90ff, #ff5546); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-fill-color: transparent; 
 }
 
 .main .cards{
@@ -189,4 +190,20 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
+}
+
+@media(max-width:600px){
+    .main-bottom input{
+        flex:none;
+        width:150px;
+    }
+    .main-botton img{
+        width: 20px;
+    }
+    .search_box{
+        padding: 5px 10px;
+    }
+    .search_box div{
+        gap: 5px;
+    }
 }
